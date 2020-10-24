@@ -80,7 +80,19 @@ const lists = [
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: '/src/images/Parachute.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Places to visit',
+    description: 'Where to go on weekend.',
+    image: '/src/images/SomePlace.jpg',
+  },
+  {
+    id: 'list-4',
+    title: 'Achievments',
+    description: 'Things I have already done and I am proud of.',
+    image: '/src/images/EyeOfNeedle.jpg',
   },
 ];
 
@@ -108,6 +120,18 @@ const columns = [
     listId: 'list-2',
     title: 'Strange column',
     icon: 'question',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-3',
+    title: 'Home',
+    icon: 'home',
+  },
+  {
+    id: 'column-6',
+    listId: 'list-4',
+    title: 'Actions',
+    icon: 'running',
   },
 ];
 
@@ -141,6 +165,16 @@ const cards = [
     id: 'card-6',
     columnId: 'column-3',
     title: 'Skyrim',
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-5',
+    title: 'Bathroom',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-6',
+    title: 'I got up early this morning!',
   },
 ];
 
