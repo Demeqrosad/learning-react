@@ -7,18 +7,25 @@ import Icon from '../Icon/Icon.js';
 
 class SearchResults extends React.Component {
 
+  
   static propTypes = 
   {
     title: PropTypes.string,
     icon: PropTypes.string,
     cards: PropTypes.array,
+    changeSearchString: PropTypes.func,
+    match: PropTypes.object,
   };
 
   static defaultProps = {
     icon: settings.defaultColumnIcon,
     cards: [],
   };
-
+  constructor(props) {
+    super(props);
+    console.log('props', props);
+    props.changeSearchString(props.match.params.request);
+  }
   render()
   {
     const {title, icon, cards} = this.props;
